@@ -1,4 +1,3 @@
-```csharp
 using System.Diagnostics;
 using System.IO;
 using System.Net;
@@ -271,8 +270,6 @@ public sealed class DownloadManager
             value /= 1024;
             unit++;
         }
-
         return $"{value:0.##} {units[unit]}";
     }
 }
-```
