@@ -1,0 +1,11 @@
+FreeDM/
+├── FreeDM.csproj
+├── App.xaml
+├── App.xaml.cs
+├── MainWindow.xaml
+├── MainWindow.xaml.cs
+├── DownloadItem.cs
+├── DownloadManager.cs
+└── .github/
+    └── workflows/
+        └── build.yml
