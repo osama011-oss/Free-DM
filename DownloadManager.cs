@@ -1,4 +1,6 @@
+```csharp
 using System.Diagnostics;
+using System.IO;
 using System.Net;
 using System.Net.Http;
 
@@ -107,8 +109,10 @@ public sealed class DownloadManager
             long existingBytes = 0;
 
             if (File.Exists(item.FilePath))
+            {
                 existingBytes =
                     new FileInfo(item.FilePath).Length;
+            }
 
             using var request =
                 new HttpRequestMessage(
@@ -271,3 +275,4 @@ public sealed class DownloadManager
         return $"{value:0.##} {units[unit]}";
     }
 }
+```
